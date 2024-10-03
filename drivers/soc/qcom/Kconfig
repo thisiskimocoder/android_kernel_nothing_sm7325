@@ -1367,7 +1367,7 @@ config SDX_EXT_IPC
 
       If unsure, say N.
 
-source "drivers/soc/qcom/icnss2/Kconfig"
+source "drivers/soc/qcom/platform/icnss2/Kconfig"
 
 source "drivers/soc/qcom/gnsssirf/Kconfig"
 endmenu
