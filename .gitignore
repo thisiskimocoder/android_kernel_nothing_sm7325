@@ -126,6 +126,7 @@ ID
 #
 # Leavings from module signing
 #
+extra
 extra_certificates
 signing_key.pem
 signing_key.priv
