@@ -43,6 +43,8 @@
 #include <linux/delay.h>
 #include <linux/wait.h>
 #include <linux/suspend.h>
+#include <linux/pci.h>
+
 
 #ifdef CONFIG_ARM64
 

@@ -462,6 +462,18 @@ struct pld_driver_ops {
 int pld_init(void);
 void pld_deinit(void);
 
+static int pld_sdio_wlan_enable(struct device *dev, struct pld_wlan_enable_cfg *config,
+                         enum pld_driver_mode mode, const char *version_str)
+{
+    // Add initialization and configuration code for SDIO bus
+    if (!dev || !config)
+        return -EINVAL;
+
+    // Insert any SDIO-specific initialization here
+
+    return 0; // Return 0 on success or an appropriate error code
+}
+
 /**
  * pld_set_mode() - set driver mode in PLD module
  * @mode: driver mode
