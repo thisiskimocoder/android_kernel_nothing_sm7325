@@ -1488,7 +1488,6 @@ static int userfaultfd_register(struct userfaultfd_ctx *ctx,
 		 */
 		vma->vm_flags = vma_pad_fixup_flags(vma, new_flags);
 		vma->vm_userfaultfd_ctx.ctx = ctx;
-		vm_write_end(vma);
 
 	skip:
 		prev = vma;
@@ -1652,7 +1651,6 @@ static int userfaultfd_unregister(struct userfaultfd_ctx *ctx,
 		 */
 		vma->vm_flags = vma_pad_fixup_flags(vma, new_flags);
 		vma->vm_userfaultfd_ctx = NULL_VM_UFFD_CTX;
-		vm_write_end(vma);
 
 	skip:
 		prev = vma;
