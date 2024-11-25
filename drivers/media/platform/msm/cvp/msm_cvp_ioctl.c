@@ -652,5 +652,5 @@ long cvp_compat_ioctl(struct file *filp,
 	}
 
 	inst = filp->private_data;
-	return cvp_ioctl(inst, cmd, (unsigned long)compat_ptr(arg));
+	return cvp_ioctl(inst, cmd, (unsigned long)(u8)compat_ptr(arg));
 }
